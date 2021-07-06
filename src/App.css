@@ -1,0 +1,39 @@
+body {
+  margin: 40px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: cyan;
+  height: 200px;
+}
+
+main {
+  grid-area: content;
+  position: relative;
+  background-color: lightgreen;
+}
+
+header {
+  grid-area: header;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.App {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-areas:
+    "header  header  header"
+    "sidebar content content"
+    "footer  footer  footer";
+    background-color: #fff;
+    color: #444;
+  }
+
+
+header, footer {
+  background-color: pink;
+}
